@@ -8,6 +8,8 @@ module.exports = {
         "plugin:vue/essential"
     ],
     "globals": {
+        "Aliplayer": true,
+        "Message": true,
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },

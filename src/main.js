@@ -7,13 +7,13 @@ import App from './App.vue'
 Vue.config.productionTip = false;
 
 // mock开关
-const mock = true
+const mock = false;
 if(mock) {
   require('./../public/mock/api.json');
 }
 //
-axios.default.baseURL = '/api'
-axios.default.timeout = 8000;
+axios.defaults.baseURL = '/api'
+axios.defaults.timeout = 8000;
 
 //接口错误拦截
 axios.interceptors.response.use(function(response) {
